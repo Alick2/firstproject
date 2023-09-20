@@ -1,0 +1,12 @@
+mekana_giriş_yaşı= 20
+
+mekana_girmek_isteyenler= "mahmut","veli","memo","nesip","ugur"
+mekana_giriş_davetliler = ["veli","hasan","tahsin","mahmut"]
+Yaş = int(input("YAŞ GİRİNİZ:"))
+mekana_girmek_isteyenler = str(input("İSİM GİRİNİZ:"))
+if  Yaş > mekana_giriş_yaşı and (mekana_girmek_isteyenler in mekana_giriş_davetliler):  # İKİ DURUMDA OLMAK ZORUNDA
+    print("Mekana giriş yaşı tutuyor ve isminiz davetliler arasında mevcuttur")
+elif  Yaş >mekana_giriş_yaşı : #İKİ DURUMDAN BİRİ OLMADIĞINDA
+    print("Mekana giriş yaşınız tutuyor ama davetliler arasında değilsiniz")
+else :
+    print("Mekana giremez")
